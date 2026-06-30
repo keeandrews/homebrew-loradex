@@ -17,6 +17,6 @@ class Loradex < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/loradex version")
-    assert_match "Git for LoRAs", shell_output("#{bin}/loradex --help")
+    assert_match "Available Commands", shell_output("#{bin}/loradex --help")
   end
 end
